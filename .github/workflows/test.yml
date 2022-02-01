@@ -1,0 +1,16 @@
+name: Test
+
+on: push
+
+jobs:
+  rspec:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@master
+        with:
+          bundler-cache: true
+      - name: Run Tests
+        run: |
+          bundle exec rspec
