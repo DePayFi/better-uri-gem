@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.authors     = ['https://github.com/depayfi/better_uri/graphs/contributors']
   s.email       = ['engineering@depay.fi']
   s.homepage    = 'https://github.com/depayfi/better_uri'
-  s.summary     = "Useful and slight extension to Ruby's URI (Uniform Resource Identifiers) core module."
-  s.description = "Useful and slight extension to Ruby's URI (Uniform Resource Identifiers) core module."
+  s.summary     = "Better URI gem to improve Ruby's URI (Uniform Resource Identifiers) core module."
+  s.description = "Better URI gem to improve Ruby's URI (Uniform Resource Identifiers) core module."
   s.files       = Dir["{lib}/**/*", "README.md"]
 
   s.add_dependency 'activesupport'
