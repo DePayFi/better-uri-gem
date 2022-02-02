@@ -86,3 +86,20 @@ uri.query.except(:two, :three).to_s # https://depay.fi?one=1
 
 `except!(keys)` - Removes the given keys from the query of the original uri and returns the uri itself.
 
+
+#### Convert queries to_param & to_query
+
+```ruby
+uri = URI('https://depay.fi?one=1&two=2&three=3')
+uri.query.to_param # one=1&three=3&two=2
+uri.query.to_query # one=1&three=3&two=2
+```
+
+#### Queries as_json
+
+```ruby
+uri = URI('https://depay.fi?one=1&two=2&three=3')
+uri.query.as_json # {"one"=>"1", "three"=>"3", "two"=>"2"}
+```
+
+

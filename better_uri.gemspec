@@ -15,7 +15,8 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 3.0.2'
 
-  s.add_dependency 'activesupport'
+  s.add_dependency 'activemodel', '>= 6', '< 7'
+  s.add_dependency 'activesupport', '>= 6', '< 7'
   s.add_dependency 'rack'
 
   s.add_development_dependency 'bundler'

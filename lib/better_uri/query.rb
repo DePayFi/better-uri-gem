@@ -1,11 +1,14 @@
 # frozen_string_literal: true
 
 require 'rack/utils'
+require 'active_support/concern'
 require 'active_support/core_ext/hash/indifferent_access'
+require 'active_model/serialization'
+require 'active_model/serializers/json'
 
 module BetterUri
   class Query
-    delegate :[], :dig, to: :parsed_query
+    delegate :[], :dig, :to_param, :to_query, :as_json, to: :parsed_query
 
     def initialize(uri)
       @uri = uri
