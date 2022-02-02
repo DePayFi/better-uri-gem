@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # this file should not be included on its own.
 # the .rspec file makes sure that the rails_helper is included by default
 require 'pry'

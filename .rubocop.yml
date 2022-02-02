@@ -1,0 +1,10 @@
+AllCops:
+  TargetRubyVersion: 3.0
+  NewCops: disable
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+

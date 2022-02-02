@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 $LOAD_PATH.push File.expand_path('lib', __dir__)
 require 'better_uri/version'
 
@@ -10,6 +12,8 @@ Gem::Specification.new do |s|
   s.summary     = "Better URI gem to improve Ruby's URI (Uniform Resource Identifiers) core module."
   s.description = "Better URI gem to improve Ruby's URI (Uniform Resource Identifiers) core module."
   s.files       = Dir['{lib}/**/*', 'README.md']
+
+  s.required_ruby_version = '>= 3.0.2'
 
   s.add_dependency 'activesupport'
   s.add_dependency 'rack'

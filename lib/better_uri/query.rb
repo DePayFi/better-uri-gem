@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rack/utils'
 require 'active_support/core_ext/hash/indifferent_access'
 
