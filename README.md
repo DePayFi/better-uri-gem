@@ -101,5 +101,3 @@ uri.query.to_query # one=1&three=3&two=2
 uri = URI('https://depay.fi?one=1&two=2&three=3')
 uri.query.as_json # {"one"=>"1", "three"=>"3", "two"=>"2"}
 ```
-
-
