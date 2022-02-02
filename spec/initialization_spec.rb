@@ -1,4 +1,4 @@
-require 'spec_helper.rb'
+require 'spec_helper'
 
 describe BetterUri::URI do
   it 'initalizes' do

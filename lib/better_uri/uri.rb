@@ -4,7 +4,6 @@ module BetterUri
   URI_CORE = URI
 
   class URI < SimpleDelegator
-
     attr_reader :uri
 
     def initialize(string)

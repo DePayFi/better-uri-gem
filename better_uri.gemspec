@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/depayfi/better_uri'
   s.summary     = "Better URI gem to improve Ruby's URI (Uniform Resource Identifiers) core module."
   s.description = "Better URI gem to improve Ruby's URI (Uniform Resource Identifiers) core module."
-  s.files       = Dir["{lib}/**/*", "README.md"]
+  s.files       = Dir['{lib}/**/*', 'README.md']
 
   s.add_dependency 'activesupport'
   s.add_dependency 'rack'
