@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
 require 'rack/utils'
-require 'active_support/concern'
+require 'active_support'
 require 'active_support/core_ext/hash/indifferent_access'
+require 'active_support/core_ext/hash/conversions'
+require 'active_model'
 require 'active_model/serialization'
 require 'active_model/serializers/json'
 
@@ -49,8 +51,7 @@ module BetterUri
     end
 
     def build_query_string(query)
-      query_string = Rack::Utils.build_nested_query(query)
-      query_string.empty? ? nil : query_string
+      query.to_param if query.present?
     end
   end
 end
